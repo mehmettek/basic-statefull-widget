@@ -20,10 +20,11 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(title:Text('Basic StateFull Widget'),
       ),
-      body: Center(
+      body: SafeArea(
+        child:Center(
         child: Column(
-          children: <Widget>[
-            Text("$count",style: TextStyle(fontSize: 30.0,color: textcolor),),
+          children: <Widget>[ 
+            Text("""$count""",style: TextStyle(fontSize: 30.0,color: textcolor),),
              SizedBox(
                 height: 80.0,
               ),
@@ -57,7 +58,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
            ],
   ),
-  ),
+  ),  
+
+      ), 
     );
   }
   arttir(){
