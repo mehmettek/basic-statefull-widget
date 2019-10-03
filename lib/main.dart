@@ -23,8 +23,12 @@ class _MyHomePageState extends State<MyHomePage> {
       body: SafeArea(
         child:Center(
         child: Column(
-          children: <Widget>[ 
-            Text("""$count""",style: TextStyle(fontSize: 30.0,color: textcolor),),
+          children: <Widget>[  Wrap(
+              children: <Widget>[
+Text("$count",style: TextStyle(fontSize: 30.0,color: textcolor),),
+           
+              ],
+            ),
              SizedBox(
                 height: 80.0,
               ),
